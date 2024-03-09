@@ -222,3 +222,10 @@ body{
 .hide{
     display: none;
 }
+
+@media (max-width: 576px){
+    .drawer-body{
+        width:36rem;
+        height: 23rem;
+    }
+}
