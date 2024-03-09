@@ -69,6 +69,7 @@ body{
     border: 1rem solid black;
     border-radius: 5%;
     min-height: 35rem;
+    max-height: 42rem;
     width: 20rem;
     background-color: #b3463e;
     display: flex;
@@ -235,5 +236,9 @@ body{
 
     .tokens{
         padding: 0.2rem 0.7rem;
+    }
+
+    .change{
+        width:36rem;
     }
 }
