@@ -228,4 +228,12 @@ body{
         width:36rem;
         height: 23rem;
     }
+    .cash-in-drawer h4{
+        font-size: 1.7rem;
+        padding: 0.2rem 0.7rem;
+    }
+
+    .tokens{
+        padding: 0.2rem 0.7rem;
+    }
 }
