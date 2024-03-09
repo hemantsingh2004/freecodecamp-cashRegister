@@ -1,0 +1,224 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+    font-size: 10px;
+    z-index: 0;
+}
+
+body{
+    background-color: #FA7F3F;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row-config{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 90%;
+}
+
+.heading h1{
+    color: #2f6420;
+    font-size: 4.5rem;
+    text-align: center;
+}
+
+.heading p{
+    color: #16472a;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+.purchase-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+}
+
+.purchase-section *{
+    font-size: 2.2rem;
+}
+
+#cash{
+    width: 20rem;
+    height: 3rem;
+}
+
+.purchase-btn{
+    padding: 0.5rem 1rem;
+    background-color: #b3463e;
+    font-size: 1.4rem;
+}
+
+.change-due{
+    position:fixed;
+    z-index: 1;
+    border: 1rem solid black;
+    border-radius: 5%;
+    min-height: 35rem;
+    width: 20rem;
+    background-color: #b3463e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+/* FCC VERSION */
+.change-due *{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.status{
+    font-size: 2.5rem;
+}
+
+.close{
+    position: absolute;
+    bottom: 0;
+    background-color: red;
+    width: 100%;
+    font-size: 2.1rem;
+    font-weight: bolder;
+    border: 0.2rem solid black;
+}
+
+.drawer-machine{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.drawer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.drawer *{
+    background-color:#74A587;
+}
+
+.price{
+    width: 25rem;
+    height: 5rem;
+}
+
+.price p{
+    width: 42%;
+    height: 45%;
+    background-color: white;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.neck{
+    width: 3rem;
+    height: 4rem;
+}
+
+.drawer-body{
+    width: 40rem;
+    height: 26rem;
+    padding: 1rem 1rem;
+}
+
+.styling{
+    display: grid;
+    grid-template: repeat(5, 1fr) / repeat(3, 1fr);
+    gap: 1rem;
+    position: relative;
+    bottom: 5rem;
+}
+
+.black-box{
+    width: 3rem;
+    height: 1rem;
+    background-color: black;
+}
+
+.cash-in-drawer{
+    width: 50%;
+    height: 90%;
+}
+
+.cash-in-drawer *{
+    background-color: white;
+}
+
+.cash-in-drawer h4{
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 0.5rem 1rem;
+}
+
+.tokens{
+    padding: 0.5rem 1rem;
+}
+
+.token p{
+    font-size: 1.8rem;
+}
+
+.change{
+    background-color: #74A587;
+    width:40rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.change-details{
+    background-color: yellowgreen;
+    width: 40%;
+    height: 60%;
+    padding: 1rem 2rem;
+    font-size: 1.6rem;
+}
+
+.change-values{
+    position:fixed;
+    z-index: 1;
+    border: 1rem solid black;
+    border-radius: 5%;
+    height: 50rem;
+    width: 35rem;
+    background-color: #b3463e;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem 1rem;
+}
+
+.change-values *{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.change-values div{
+    width: 100%;
+}
+
+.hide{
+    display: none;
+}

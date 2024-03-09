@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="heading">
+        <h1>Cash Register</h1>
+        <p>This Program returns the change for Every Purchase</p>
+        <p>
+          Note: Change in Drawer doesn't increase after Purchase for obvious
+          reasons
+        </p>
+      </div>
+      <div class="purchase-section">
+        <label for="cash">Enter Cash From Customer: </label>
+        <input type="number" name="cash" id="cash" />
+        <button class="purchase-btn" id="purchase-btn">Purchase</button>
+      </div>
+      <div class="change-due hide" id="change-due">
+        <!-- IN FCC VERSION NO BUTTON NEEDED -->
+        <button class="close" id="change-due-close" onclick="closeChangeDue()">Close</button>
+      </div>
+      <div class="drawer-machine">
+        <div class="drawer">
+          <div class="price row-config">
+            <p>Price:</p>
+            <p id="curr-price">0</p>
+          </div>
+          <div class="neck"></div>
+          <div class="drawer-body row-config">
+            <div class="styling">
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+              <div class="black-box"></div>
+            </div>
+            <div class="cash-in-drawer">
+              <h4>Cash In Drawer</h4>
+              <div class="tokens">
+                <div class="token row-config">
+                  <p>Penny:</p>
+                  <p class="tokens-left" id="PENNY">0</p>
+                </div>
+                <div class="token row-config">
+                  <p>Nickle:</p>
+                  <p class="tokens-left" id="NICKEL">0</p>
+                </div>
+                <div class="token row-config">
+                  <p>Dime:</p>
+                  <p class="tokens-left" id="DIME">0</p>
+                </div>
+                <div class="token row-config">
+                  <p>Quarter:</p>
+                  <p class="tokens-left" id="QUARTER">0</p>
+                </div>
+                <div class="token row-config">
+                  <p>Dollar:</p>
+                  <p class="tokens-left" id="ONE">0</p>
+                </div>
+                <div class="token row-config">
+                  <p>Five Dollar:</p>
+                  <p class="tokens-left" id="FIVE">0</p>
+                </div>
+                <div class="token row-config">
+                  <p>Ten Dollar:</p>
+                  <p class="tokens-left" id="TEN">0</p>
+                </div>
+                <div class="token row-config">
+                  <p>Twenty Dollar:</p>
+                  <p class="tokens-left" id="TWENTY">0</p>
+                </div>
+                <div class="token row-config">
+                  <p>Hundred Dollar:</p>
+                  <p class="tokens-left" id="HUNDRED">0</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="change">
+          <button class="change-details" id="change-values-btn">Change</button>
+        </div>
+      </div>
+      <div class="change-values hide" id="change-values">
+        <button class="close" id="change-values-close">Enter</button>
+
+        <div class="change-penny row-config">
+          <label for="penny">Pennies</label>
+          <input type="number" name="penny" />
+        </div>
+        <div class="change-nickel row-config">
+          <label for="nickel">Nickles</label>
+          <input type="number" name="nickel" />
+        </div>
+        <div class="change-dime row-config">
+          <label for="dime">Dimes</label>
+          <input type="number" name="dime" />
+        </div>
+        <div class="change-quarter row-config">
+          <label for="quarter">Quarters</label>
+          <input type="number" name="quarter" />
+        </div>
+        <div class="change-one row-config">
+          <label for="one">1 Dollars</label>
+          <input type="number" name="one" />
+        </div>
+        <div class="change-five row-config">
+          <label for="five">5 Dollars</label>
+          <input type="number" name="five" />
+        </div>
+        <div class="change-ten row-config">
+          <label for="ten">10 Dollars</label>
+          <input type="number" name="ten" />
+        </div>
+        <div class="change-twenty row-config">
+          <label for="twenty">20 Dollars</label>
+          <input type="number" name="twenty" />
+        </div>
+        <div class="change-hundred row-config">
+          <label for="hundred">100 Dollars</label>
+          <input type="number" name="hundred" />
+        </div>
+        <div class="change-price row-config">
+          <label for="price">Price</label>
+          <input type="number" name="price" />
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
