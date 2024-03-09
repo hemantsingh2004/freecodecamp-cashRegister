@@ -68,8 +68,8 @@ body{
     z-index: 1;
     border: 1rem solid black;
     border-radius: 5%;
-    height: 42rem;
-    width: 20rem;
+    height: 45rem;
+    width: 25rem;
     background-color: #b3463e;
     display: flex;
     flex-direction: column;
