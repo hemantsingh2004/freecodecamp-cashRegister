@@ -139,7 +139,7 @@ const calculateChange = (totalCash, cashToken) => {
 
 const determineRegisterStatus = (returnToken, cashToken, change, cid) => {
   if (change > 0) {
-    return { status: "INSUFFICIENT_FUNDS", change: [] };
+    return { status: "INSUFFICIENT FUNDS", change: [] };
   } else {
     const totalFunds = Object.values(cashToken).reduce(
       (sum, val) => sum + val,
