@@ -214,7 +214,7 @@ const changeDue = (status) => {
   });
 };
 const closeChangeDue = () => {
-  changeDueDiv.innerHTML = `<button class="close" id="change-due-close" onclick="closeChangeDue()>Close</button>`;
+  changeDueDiv.innerHTML = `<button class="close" id="change-due-close" onclick="closeChangeDue()">Close</button>`;
   changeDueDiv.classList.add("hide");
 };
 
