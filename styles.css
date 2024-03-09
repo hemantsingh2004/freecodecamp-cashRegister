@@ -68,8 +68,7 @@ body{
     z-index: 1;
     border: 1rem solid black;
     border-radius: 5%;
-    min-height: 35rem;
-    max-height: 42rem;
+    min-height: 38rem;
     width: 20rem;
     background-color: #b3463e;
     display: flex;
